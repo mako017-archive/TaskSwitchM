@@ -49,8 +49,8 @@
     <platform name="ios">
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
+        <icon src="res/one.png" />
     </platform>
 
-    <icon src="res/one.png" />
 
 </widget>
