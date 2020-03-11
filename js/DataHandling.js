@@ -397,7 +397,7 @@ function openLock() {
 		let data = getLocal();
 		let count = 0;
 		for (const vp of data) {
-			$.post("https://lets-test.it/Enticklung/TaskSwitch/php/mysql.php", vp, function(data){
+			$.post("https://lets-test.it/Entwicklung/TaskSwitch/php/mysql.php", vp, function(data){
 				console.log(data);
 				if (data.includes("successfully")) {
 					count++;
