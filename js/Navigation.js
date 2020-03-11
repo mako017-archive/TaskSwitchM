@@ -11,7 +11,7 @@ var Instructions = [
     'leer',
     'Bitte dreh Dein Tablet und lass es für die gesamte Aufgabe in dieser Position',
     'In dieser Aufgabe geht es darum, möglichst schnell Blumen zu sortieren. Dafür musst Du Dich gut konzentrieren.',
-    'Die Blumen in dieser Aufgabe können unterschiedlich aussehen. Sie haben unterschiedlich viele rote Blütenblätter <img src="./img/bluetenblatt.png" class="small-element"> und in der Mitte entweder einen blauen Kreis <img src="./img/kreis.png" class="small-element"> oder ein blaues Viereck <img src="./img/viereck.png" class="small-element">. Wenn Du auf "Weiter" klickst, erklären wir Dir die Regeln.',
+    'Die Blumen in dieser Aufgabe können unterschiedlich aussehen. Sie haben unterschiedlich viele rote Blütenblätter <img src="img/Bluetenblatt.png" class="small-element"> und in der Mitte entweder einen blauen Kreis <img src="img/Kreis.png" class="small-element"> oder ein blaues Viereck <img src="img/Viereck.png" class="small-element">. Wenn Du auf "Weiter" klickst, erklären wir Dir die Regeln.',
     'Blumen mit diesen Kombinationen sollst Du nach OBEN schieben:',
     'Wenn der Kasten hier dunkel wird, drehen sich die Regeln aber um.',
     'Bevor es richtig losgeht, üben wir ein bisschen. Du siehst gleich eine ganze Reihe mit Blumen. Schiebe bitte alle Blumen, die Du Dir gerade gemerkt hast nach oben. Bitte fang ganz links an. Wenn Du eine Blume richtig sortiert hast, bekommt sie einen grünen Rahmen. Wenn Du falsch sortiert hast, wird der Rahmen rot und du musst die Blume korrigieren.',
