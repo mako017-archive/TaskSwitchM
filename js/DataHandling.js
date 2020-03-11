@@ -393,7 +393,7 @@ function openLock() {
 		document.getElementById("download-div").classList.remove("hidden");
 		document.getElementById("download-txt").value = jtc2(getLocal());
 	}
-	else if (Participant.user.trim().toLowerCase() === "download2") {
+	else if (Participant.user.trim().toLowerCase() === "upload") {
 		let data = getLocal();
 		let count = 0;
 		for (const vp of data) {
