@@ -1,0 +1,237 @@
+*{
+	margin: 				0.1vw;
+	padding: 				0;
+	box-sizing: 			border-box;
+	
+	font: 					14pt Arial, sans-serif;	
+}
+
+html{
+	background: 			radial-gradient(circle, #fff 20%, #ccc);
+	background-size: 		cover;
+}
+
+body{
+	text-align: center;
+}
+
+strong, b{
+	font-weight: bold;
+}
+
+#progress {
+	position: relative;
+	display: inline-block;
+	top: 5px;
+	height: 5%;
+	width: 90%;
+	max-height: 20px;
+
+	text-align: center;
+	font-size: 0;
+
+	border-radius: 10px;
+	border-style: solid;
+	border-width: 2px;
+}
+
+#fake-progress-wrap, #real-progress-wrap{
+	display: inline-block;
+	height: 100%;
+
+	width: 10%;
+	background-color: rgb(199, 199, 199);
+	margin: 0;
+	border-radius: 10px 0px 0px 10px;
+}
+
+#fake-progress, #real-progress{
+	background-color: rgb(0, 124, 10);
+	height: 100%;
+	width: 0%;
+	border-radius: inherit;
+	margin: 0;
+}
+
+#real-progress-wrap {
+	width: 100%;
+	border-radius: 0px 10px 10px 0px;
+}
+
+#CenterButton{
+	text-align: 			center;
+}
+
+.center-out
+{
+     display: table;
+     position: absolute;
+     height: 100%;
+     width: 100%;
+}
+.center-middle
+{
+     display: table-cell;
+     vertical-align: middle;
+}
+
+.Body, .Wrap {
+  position: absolute;
+  top: 0px;
+
+  width: 100%;
+  height: 100%;
+
+  margin: 0;
+
+  overflow: hidden;
+}
+
+.Body {
+  /* Sending body at the bottom of the stack */
+  z-index: 1;
+  	background: 			radial-gradient(circle, #fff 20%, #ccc);
+	background-size: 		cover;
+}
+
+.Wrap {
+	text-align: 			center;
+	z-index: 2;
+}
+
+.Frame {
+	height: 				auto;
+	max-height: 			90%;
+	margin: 				auto;
+	
+	width: 					90%;
+
+	padding:				0 1%;
+	
+	background: 			#f1f1f1;
+	border-radius: 			3px;
+	border-style: 			solid;
+	border-width: 			3px;
+	box-shadow: 			0px 4px #aaaaaa, 0px 10px 15px rgba(0, 0, 0, 0.2);
+
+	display: 				block;
+}
+
+#TestContainer {
+	margin: 				0 auto;
+
+  max-width: 				95%;
+  position: relative;
+
+	vertical-align: 		middle;
+}
+
+.TestContainer {
+  display: inline-block;
+}
+
+.Animation-out {
+	animation-duration: 	0.3s;
+  animation-name: 		move-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes move-out {
+    from {
+    		left: 		0%;}
+    to {
+    		left: 		-110%;}
+}
+
+.Animation-in {
+	animation-duration: 	0.3s;
+  animation-name: 		move-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes move-in {
+    from {
+    		left: 		110%;}
+    to {
+    		left: 		0%;}
+}
+
+.hidden{
+  display: none !important;
+}
+
+.overflow{
+	overflow: auto;
+}
+
+.Stimulus, .Stimulus-ex{
+	max-width: 				10%;
+	position:				relative;
+	border-style: solid;
+	border-color: rgba(50, 50, 50, 0);
+}
+
+.Item_wrong{
+	border-style: solid;
+	border-color: #FF0000;
+}
+
+.Item_correct{
+	border-style: solid;
+	border-color: #00FF00;
+}
+
+.switch{
+	background: 	#777;
+}
+
+#consent{
+	text-align: left;
+}
+
+.small-element{
+	height: 14pt;
+}
+
+.middle-img{
+	height: 10vh;
+}
+
+.big-img{
+	height: 20vh;
+}
+
+.lockscreen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.margin-center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.download-div{
+    display: flex;
+    width: 80vw;
+    height: 60vh;
+    margin: auto;
+    flex-direction: column;
+}
+
+.delete{
+    font-weight: bolder;
+    color: #f00;
+    height: 5vh;
+    font-size: 4vh;
+}
+
+.delete:hover{
+    color: #f00;
+}
+
+.download-div > textarea{
+    flex: 1;
+}
