@@ -388,12 +388,12 @@ function openLock() {
 	if (typeof cordova !== "undefined") {
         Participant.tech = Date()+";"+cordova.plugins.deviceName.name+";"+device.uuid;
     }
-	if (Participant.user.trim() === "download") {
+	if (Participant.user.trim().toLowerCase() === "download") {
 		document.getElementById("lockscreen").classList.add("hidden");
 		document.getElementById("download-div").classList.remove("hidden");
 		document.getElementById("download-txt").value = jtc2(getLocal());
 	}
-	else if (Participant.user.trim() === "download2") {
+	else if (Participant.user.trim().toLowerCase() === "download2") {
 		let data = getLocal();
 		let count = 0;
 		for (const vp of data) {
