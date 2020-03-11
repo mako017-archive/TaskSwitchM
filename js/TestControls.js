@@ -62,22 +62,50 @@ function giveFeed(input) {
 	Stimulus[Settings.lastTouch].classList.remove("Item_wrong");
 	Stimulus[Settings.lastTouch].classList.remove("Item_correct");
 	if (Settings.switch[Settings.currentPage][Settings.currentItem]=="0" && Settings.pages[Settings.currentPage][Settings.currentItem][0]=="t" && input==-1) {
-		alert(FeedbackText.target);
+		if (typeof navigator.notification !== "undefined") {
+			navigator.notification.alert(
+				FeedbackText.target,  // message
+				function() {},         // callback
+				'Fehler',            // title
+				'Weiter'                  // buttonName
+			);
+		}else alert(FeedbackText.target);
 		snapItem("bottom");
 		Stimulus[Settings.lastTouch].classList.add("Item_wrong");
 		Participant.mistakes +=1;
 	} else if (Settings.switch[Settings.currentPage][Settings.currentItem]=="0" && Settings.pages[Settings.currentPage][Settings.currentItem][0]=="d" && input==1) {
-		alert(FeedbackText.distr);
+		if (typeof navigator.notification !== "undefined") {
+			navigator.notification.alert(
+				FeedbackText.distr,  // message
+				function() {},         // callback
+				'Fehler',            // title
+				'Weiter'                  // buttonName
+			);
+		}else alert(FeedbackText.distr);
 		snapItem("top");
 		Stimulus[Settings.lastTouch].classList.add("Item_wrong");
 		Participant.mistakes +=1;
 	} else if (Settings.switch[Settings.currentPage][Settings.currentItem]=="1" && Settings.pages[Settings.currentPage][Settings.currentItem][0]=="t" && input==1) {
-		alert(FeedbackText.distrS);
+		if (typeof navigator.notification !== "undefined") {
+			navigator.notification.alert(
+				FeedbackText.distrS,  // message
+				function() {},         // callback
+				'Fehler',            // title
+				'Weiter'                  // buttonName
+			);
+		}else alert(FeedbackText.distrS);
 		snapItem("top");
 		Stimulus[Settings.lastTouch].classList.add("Item_wrong");
 		Participant.mistakes +=1;
 	} else if (Settings.switch[Settings.currentPage][Settings.currentItem]=="1" && Settings.pages[Settings.currentPage][Settings.currentItem][0]=="d" && input==-1) {
-		alert(FeedbackText.targetS);
+		if (typeof navigator.notification !== "undefined") {
+			navigator.notification.alert(
+				FeedbackText.targetS,  // message
+				function() {},         // callback
+				'Fehler',            // title
+				'Weiter'                  // buttonName
+			);
+		}else alert(FeedbackText.targetS);
 		snapItem("bottom");
 		Stimulus[Settings.lastTouch].classList.add("Item_wrong");
 		Participant.mistakes +=1;
